@@ -27,7 +27,7 @@ export default function Navbar () {
     }
 
     const navBkg = `bg-purple-800`
-    const navMobileBkg = `bg-purple-900 md:bg-purple-800`
+    const navMobileBkg = `bg-gray-900 md:bg-purple-800`
     const linkStyles = `w-full text-center hover:bg-purple-800 hover:md:bg-purple-700 px-4 py-2 transition-colors duration-200 ease-in`
     const activeLinkStyle = `bg-purple-950 md:bg-purple-950`
 
