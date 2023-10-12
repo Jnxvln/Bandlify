@@ -26,10 +26,10 @@ export default function Navbar () {
         ]
     }
 
-    const navBkg = `bg-slate-600`
-    const navMobileBkg = `bg-slate-700 md:bg-slate-600`
-    const linkStyles = `w-full text-center hover:bg-slate-800 hover:md:bg-slate-700 px-4 py-2 transition-colors duration-200 ease-in`
-    const activeLinkStyle = `bg-slate-900 md:bg-slate-800`
+    const navBkg = `bg-purple-800`
+    const navMobileBkg = `bg-purple-900 md:bg-purple-800`
+    const linkStyles = `w-full text-center hover:bg-purple-800 hover:md:bg-purple-700 px-4 py-2 transition-colors duration-200 ease-in`
+    const activeLinkStyle = `bg-purple-950 md:bg-purple-950`
 
     useEffect(() => {
         setMounted(true)
@@ -73,11 +73,7 @@ export default function Navbar () {
 
                 {/* Secondary Nav */}
                 <div className="flex flex-col items-center md:flex-row">
-
-                    
-
                     { links.secondary.map(link => {
-
                         if (debugLoggedIn) {
                             if (link.href === "/login" || link.href === "/register") return;
                         } else {

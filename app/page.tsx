@@ -1,9 +1,14 @@
 export default function Home() {
   return (
     <main>
-      <header className="p-8">
-        <h1 className="text-2xl font-bold text-center">Home</h1>
+      <header className="bg-blue-950 p-20">
+        <h1 className="text-5xl font-bold text-orange-400 text-center">Bandlify</h1>
+        <h2 className="text-center text-white my-3">All your band resources in one place</h2>
       </header>
+
+      <section className="bg-gray-700 p-4 text-white">
+        <button>Sign Up</button>
+      </section>
     </main>
   )
 }
