@@ -41,27 +41,27 @@ export default function Register () {
                 {/* First & Last Name */}
                 <div className="flex flex-col m-auto gap-6 w-full md:flex-row">                    
                     <div className="flex flex-col w-full">
-                        <Input type={'firstName'} label="First Name" name="firstName" isRequired autoFocus />
+                        <Input type={'firstName'} label="First Name" name="firstName" disabled={loading} isRequired autoFocus />
                     </div>
                     <div className="flex flex-col w-full">
-                        <Input type="text" label="Last Name" name="lastName" isRequired />
+                        <Input type="text" label="Last Name" name="lastName" disabled={loading} isRequired />
                     </div>
                 </div>
 
                 {/* Email */}
                 <div className="flex flex-col m-auto gap-6 w-full md:flex-row">                    
                     <div className="flex flex-col w-full">
-                        <Input type="email" label="E-mail" name="email" isRequired />
+                        <Input type="email" label="E-mail" name="email" disabled={loading} isRequired />
                     </div>
                 </div>
 
                 {/* Password & Confirm Password */}
                 <div className="flex flex-col m-auto gap-6 w-full md:flex-row">                    
                     <div className="flex flex-col w-full">
-                        <Input type="password" label="Password" name="password" isRequired />
+                        <Input type="password" label="Password" name="password" disabled={loading} isRequired />
                     </div>
                     <div className="flex flex-col w-full">
-                        <Input type="password" label="Confirm Password" name="confirmPassword" isRequired />
+                        <Input type="password" label="Confirm Password" name="confirmPassword" disabled={loading} isRequired />
                     </div>
                 </div>
 
